@@ -18,7 +18,7 @@ const routes: Routes = [
   {
     path: 'bi-dashboard',
     component: BiDashboardComponent,
-    canActivate: [AuthGuard]
+    // canActivate: [AuthGuard]
   }
 ];
 
