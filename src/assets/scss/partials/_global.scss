@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+@font-face {
+    font-family: 'maax_roundedregular';
+    src: url('../fonts/maax-rounded.woff2') format('woff2'),
+         url('../fonts/maax-rounded.woff') format('woff');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'maax_roundedregular_bold';
+    src: url('../fonts/maax-rounded-webfont.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+$base-font-family               : 'Open Sans';
+$base-font-size                 : 12px;
+$base-font-color                : #000;
+$base-font-weight               : 300;
+$base-line-height               : 1.6em;
+$base-light-color               :#fff;
+$base-light-grey                :#F3F2F1;
+$base-dark-grey                 :#4E4E4E;
+
+$website-brand-color            :#2D87C6;
+$border-color                   :#E2E2E2;
+$field-border-color             :$website-brand-color;
+$website-brand-color-2          :#FAAF41;
+$field-color                    :#4E4E4E;
+$field-bg-color                 :#F4F8F8;
+$scrollbar-color                :#F4F8F8;
+$danger-color                   :#FF0000;
+$scrollbar-thumb-color          :$base-font-color;
+$header-height                  : 80px;
+$field-height                   : 40px;
+
+$button-font-size               : 13px;

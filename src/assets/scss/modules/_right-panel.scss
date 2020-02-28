@@ -1,0 +1,48 @@
+.right-content-wrapper {
+    width      : calc(100% - 340px);
+    margin-left: 340px;
+    margin-top: 80px;
+
+    .middle_content {
+        &_wrapper {
+            padding: 1rem;
+        }
+
+        &_header {
+
+            h1,
+            h2 {
+                font-size    : 20px;
+                color        : $website-brand-color;
+                font-weight  : 500;
+                display      : inline-block;
+                margin-bottom: 0;
+            }
+
+            h2 {
+                font-weight: 300;
+
+                span {
+                    font-size: 0.85rem;
+                    color    : $base-dark-grey;
+                }
+            }
+
+            .values_dropdown {
+                width       : calc(100% - 45px);
+                margin-right: 15px;
+            }
+
+            .fullscreen_icon {
+                width: 30px;
+
+                a {
+                    fill   : $website-brand-color;
+                    display: inline-block;
+                    width  : 20px;
+                    height : 20PX;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.sale {
+    &_cards {
+        margin-top: 0.625rem;
+        @include flexbox();
+
+        &_block {
+            margin-right: 0.625rem;
+            padding: 	0.625rem;
+            background: $base-light-grey;
+            width: 11%;
+            @extend .addborders;
+
+            h3 {
+                color: $base-dark-grey;
+                font-size: 0.75rem;
+                min-height: 28px;
+                font-weight: 600;
+            }
+    
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &_amount {
+        font-size: 1.125rem;
+        font-weight: 700;
+        @extend .add_border_top;
+    }
+}

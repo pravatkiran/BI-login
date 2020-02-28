@@ -1,0 +1,6 @@
+.form-control {
+    @include placeholder {
+        color: $base-light-grey;
+        font-size: $base-font-size;
+    }
+}

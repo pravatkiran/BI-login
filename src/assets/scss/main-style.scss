@@ -1,0 +1,25 @@
+// PARTIALS FILES
+@import 'partials/global';
+
+//COMPONENTS FILES
+@import 'components/mixins';
+@import 'components/borders';
+@import 'components/spacing';
+@import 'components/flex-grid';
+@import 'components/button';
+@import 'components/forms';
+@import 'components/sprite-icons';
+@import 'components/tooltip';
+
+// MODULES FILES
+@import 'modules/layout';
+@import 'modules/header';
+@import 'modules/login';
+@import 'modules/left-sidebar';
+@import 'modules/chosen-dropdown';
+@import 'modules/right-panel';
+@import 'modules/dashboard';
+@import 'modules/graph-cards';
+
+//RESPONSIVE FILES
+@import 'responsive/max-width-768';

@@ -1,0 +1,88 @@
+.setbg {
+    position: fixed;
+    top  : $header-height;
+    left    : 0;
+    z-index : -1;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.login_wrapper {
+    margin-top: $header-height;
+
+    h1 {
+        font-family: 'maax_roundedregular_bold';
+        font-size: 30px;
+        font-weight: 600;
+        border-bottom: dashed 1px $base-font-color;
+        padding: 1rem 0;
+        margin-bottom: 0;
+    }
+    
+    .welcome_wrapper {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        padding-right: 4rem;
+
+        h2 {
+            font-family: 'maax_roundedregular_bold';
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+        p {
+            &.welcome_text {
+                font-size: 16px;
+                line-height: 1.6em;
+            }
+        }
+    }
+    .login_form {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        padding-left: 4rem;
+        border-left: dashed 1px $base-font-color;
+
+        h2 {
+            font-family: 'maax_roundedregular_bold';
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        label {
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+        }
+        .form-control {
+            background: #F4F8F8;
+            border-color: $website-brand-color;
+            padding: 10px 16px;
+            height: 45px;
+            font-size: 18px;
+        }
+        .btn-primary {
+            padding: 1rem 2rem;
+            @include border-radius(50px);
+            min-width: 150px;
+            font-size: 14px;
+            font-weight: 600;
+            background: $website-brand-color;
+        }
+        .login_terms {
+            font-size: 12px;
+        }
+    }
+    .login_footer {
+        border-top: dashed 1px $base-font-color;
+        padding: 1rem 0;
+        text-align: center;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}

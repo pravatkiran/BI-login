@@ -1,0 +1,100 @@
+.leftflyout_close_action,
+.leftflyout_open_action {
+    width     : 10px;
+    height    : 100px;
+    background: $website-brand-color-2;
+    @extend .middle_align;
+    position   : fixed;
+    left       : 340px;
+    top        : 50%;
+    margin-top: -50px;
+    z-index: 2;
+
+    em {
+        @include triangle(0, 5px, 5px, 5px, left, $base-font-color);
+        display: inline-block;
+        @extend .transition;
+    }
+    &.rotate_arrow {
+        em {
+            @include rotate(180);
+            @extend .transition;
+        }
+    }
+}
+
+.left_sidebar {
+    width     : 340px;
+    height    : 100vh;
+    overflow-y: scroll;
+    position  : fixed;
+    left      : 0;
+    top       : 0;
+    @include box-shadow(4px, -1px, 10px, rgba(0, 0, 0, 0.4));
+
+    &::-webkit-scrollbar {
+        background: $scrollbar-color;
+        width     : 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background   : $scrollbar-thumb-color;
+        border-radius: 50px;
+    }
+
+    &_header {
+        @include flexbox();
+        border-bottom: dashed 1px $website-brand-color-2;
+    }
+
+    .logo {
+        width  : 218px;
+        display: inline-block;
+        padding: 0.5rem;
+    }
+
+    &_form_wrapper {
+        padding: 1rem;
+
+        &.preset_details {
+            border-bottom: dashed 1px $website-brand-color;
+
+            label {
+                font-weight  : 400;
+                margin-bottom: 0.2rem;
+            }
+
+            .chosen-container-single {
+                .chosen-single {
+                    background  : #E5E5E5;
+                    border-color: #B5B5B6;
+                }
+
+                .chosen-default {
+                    color: #4E4E4E;
+                }
+            }
+
+            .preset_delete_action {
+                a {
+                    @extend .middle_align;
+                    width     : 40px;
+                    height    : 40px;
+                    background: #E5E5E5;
+                    @extend .addborders;
+                    border-left : none;
+                    border-color: #B5B5B6;
+                }
+            }
+        }
+
+        label {
+            font-weight  : 600;
+            margin-bottom: 0.2rem;
+        }
+    }
+
+    &_footer_action {
+        border-top: dashed 1px $website-brand-color;
+    }
+}

@@ -1,0 +1,29 @@
+body {
+    color: $base-font-color;
+    font-size: $base-font-size;
+    font-family: $base-font-family;
+    font-weight: $base-font-weight;
+
+    &::-webkit-scrollbar {
+        background: $base-light-grey;
+        width: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $base-font-color;
+        border-radius: 50px;
+    }
+}
+a {
+    color: $website-brand-color;
+}
+h1 {
+    font-weight: $base-font-weight;
+}
+.middle_align {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+}
+.transition {
+    @include transition(all, 0.3s, linear);
+}

@@ -1,0 +1,50 @@
+.graph {
+    &_cards {
+
+    }
+    &_header {
+        background: $base-light-grey;
+        padding: 0 0.625rem;
+        @include flexbox();
+        @include align-items(center);
+
+        h3 {
+            margin-bottom: 0;
+            font-size: 1rem;
+            display: inline-block;
+        }
+
+        .graph_action_icons {
+            margin-left: auto;
+            @include flexbox();
+            @include align-items(center);
+            a {
+                fill: $website-brand-color;
+                display: inline-block;
+                padding: 0.3125rem;
+                @extend .transition;
+
+                svg {
+                    height: 16px;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:hover,
+                &.active {
+                    background: $website-brand-color;
+                    fill: $base-light-color;
+                    @extend .transition;
+                }
+            }
+            .graph_icon_sep {
+                height: 100%;
+                width: 1px;
+                background: $website-brand-color;
+                margin: 0 0.62rem 0 0;
+            }
+        }
+    }
+}

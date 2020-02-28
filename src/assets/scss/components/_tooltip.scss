@@ -1,0 +1,16 @@
+.tooltip-inner {
+    background-color: rgba(0,0,0,0.6);
+    font-size: $base-font-size;
+}
+.tooltip.bs-tooltip-right .arrow:before {
+    border-right-color: rgba(0,0,0,0.6) !important;
+}
+.tooltip.bs-tooltip-left .arrow:before {
+    border-left-color: rgba(0,0,0,0.6) !important;
+}
+.tooltip.bs-tooltip-bottom .arrow:before {
+    border-bottom-color: rgba(0,0,0,0.6) !important;
+}
+.tooltip.bs-tooltip-top .arrow:before {
+    border-top-color: rgba(0,0,0,0.6) !important;
+}
